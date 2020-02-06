@@ -1,1 +1,31 @@
 // Navigation Styles here
+nav {
+  color: @font-color;
+
+  .flex(space-between, stretch);
+  border: 1px solid red;
+
+  h1 {
+   
+    display: block;
+    padding: 2% 0;
+    border: 1px solid red;
+  }
+
+  .nav-bar {
+    width: 45%;
+    .flex();
+    flex-wrap: nowrap
+  }
+
+  a {
+    width: 25%;
+    height: 100%;
+    .center();
+    color: @font-color;
+    font-size: 1.5rem;
+    text-decoration: none;
+    align-items: center;
+    border: 1px solid red;
+  }
+}

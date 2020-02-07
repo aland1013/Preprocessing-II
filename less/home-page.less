@@ -91,8 +91,7 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    .flex(space-between);
 
     @media @mobile {
       padding-top: 20px ;
@@ -117,6 +116,69 @@
           font-size: 1.4rem
         }
       }
+    }
+  }
+
+  .content-form {
+    border-top: 2px dashed @navigation-border;
+    padding: 30px 5% 20px;
+    .flex(center, flex-start);
+    flex-direction: column;
+
+    @media @mobile {
+      padding: 15px 0 10px;
+    }
+
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+
+    form {
+      width: 80%;
+      margin: auto;
+
+      div {
+        margin: 0 0 20px;
+      }
+
+      input {
+        width: 50%;
+        border-radius: 5px;
+        
+        &:focus {
+          outline: none;
+        }
+
+        @media @mobile {
+          width: 70%;
+        }
+      }
+
+      textarea {
+        width: 100%;
+        margin: 10px 0;
+        height: 100px;
+        border-radius: 5px;
+        
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .btn-wrapper {
+        .center();
+
+        @media @mobile {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .btn {
+      .button(@button-bg);
+      width: 30%;
+      align-self: center;
     }
   }
 }// home

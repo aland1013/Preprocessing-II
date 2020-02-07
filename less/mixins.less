@@ -1,1 +1,22 @@
 // Mixins in here
+.flex(@justify: flex-start, @align: flex-start) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button(@bg-color) {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  background: @bg-color;
+  color: @white;
+  font-size: 1.8rem;
+  text-align: center;
+}
